@@ -1,0 +1,5 @@
+python-fasthtml
+APScheduler
+requests
+fasthtml-hf
+datasets
