@@ -3,7 +3,6 @@ from datasets import load_dataset
 import datetime
 from pbs_data import PBSPublicDataAPIClient
 import os
-from fasthtml_hf import setup_hf_backup
 from fasthtml import FastHTML
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
@@ -336,5 +335,4 @@ scheduler.start()
 
 atexit.register(lambda: scheduler.shutdown())
 
-setup_hf_backup(app)
 serve()
